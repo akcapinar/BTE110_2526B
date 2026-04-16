@@ -1,8 +1,10 @@
 <Solution>
   <Project Path="BTE110_2526B/BTE110_2526B.csproj" />
   <Project Path="Hafta1/Hafta1.csproj" />
+  <Project Path="Hafta10/Hafta10.csproj" Id="8ca12a9b-7090-404c-af91-48ceb40683ce" />
   <Project Path="Hafta3/Hafta3.csproj" Id="de30ccdb-937a-41a2-bc6e-49568a43afbd" />
   <Project Path="Hafta4/Hafta4.csproj" Id="c5e7a874-58ea-4323-9240-cbca2c584dc0" />
   <Project Path="Hafta6/Hafta6.csproj" Id="513b173b-acdb-4507-8dd6-1fe86fae83df" />
   <Project Path="Hafta7/Hafta7.csproj" Id="80494853-eb8f-4cdb-ad6e-47d6c93d26b4" />
+  <Project Path="Hafta9/Hafta9.csproj" Id="da04adb3-bbb3-4a4a-a2dc-0c7c032d858b" />
 </Solution>

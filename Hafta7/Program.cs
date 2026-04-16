@@ -140,7 +140,6 @@
 
             double sonuc = say2 / say1;
 
-
             Console.ReadLine();
         }
     }
