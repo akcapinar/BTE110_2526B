@@ -4,131 +4,156 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("K. Adını gir: ");
-            string kAdi = Console.ReadLine();
+            //Karar yapıları (if-else-else if)
+            //While döngüsü
 
-            Console.Write("Şifre: ");
-            string sifre = Console.ReadLine();
+            //Diziler
+            //For Döngüsü
 
-            if (kAdi == "admin" || sifre == "1234")
+            int a;
+            string b;
+            byte c;
+            bool d;
+            char e;
+            double f;
+
+
+
+            //Öğrenci notlarının ortalamasını hesaplayan bir program yazınız. Öğrenci sayısını kullanıcıdan alınız ve her öğrencinin notunu kullanıcıdan alarak ortalamayı hesaplayınız.
+
+            int not1 = 0;
+            int not2 = 0;
+            int not3 = 0;
+            int not4 = 0;
+            int not5 = 0;
+
+            //Console.Write("1. Notu girin: ");
+            //not1 = int.Parse(Console.ReadLine());
+
+            //Console.Write("2. Notu girin: ");
+            //not2 = int.Parse(Console.ReadLine());
+
+            //Array kullanarak notları tutalım
+            //Dizi
+
+
+            //int[] g;
+
+            //g = new int[5];
+
+            //g = new int[] { 11, 22, 33, 44, 55, 66, 77, 88, 99 };
+
+            //g[0]++;
+
+            //Console.WriteLine(g[0]);
+
+
+            //g[0] = 10;
+
+
+            //while (1 == 1)
+            //{
+
+            //}
+
+            //for (int i = 0; i < g.Length; i++)
+            //{
+            //    g[i] = new Random().Next(1111, 9999);
+            //}
+
+            //for (int i = 0; i < g.Length; i++)
+            //{
+            //    Console.WriteLine(g[i]);
+            //}
+
+
+            int[] notlar;
+
+            Console.Write("Kaç öğrencinin notunu gireceksiniz? ");
+            int ogrenciSayisi = int.Parse(Console.ReadLine());
+
+            notlar = new int[ogrenciSayisi];
+
+            for (int i = 0; i < notlar.Length; i++)
             {
-                Console.WriteLine("Giriş başarılı");
+                Console.Write($"{i + 1}. Öğrencinin notunu gir: ");
+                notlar[i] = int.Parse(Console.ReadLine());
             }
-            else
+
+            int toplamNot = 0;
+
+            for (int i = 0; i < notlar.Length; i++)
             {
-                Console.WriteLine("Giriş başarısız");
+                toplamNot += notlar[i];
             }
-    
-            Console.ReadLine();
+
+            double ortalama = (double)toplamNot / ogrenciSayisi;
+
+            Console.WriteLine("-----------------");
+            Console.Write($"Ortalama: {ortalama}");
 
 
-        }
-
-        static void Main1(string[] args)
-        {
-            byte notSayi;
-
-            while (true)
+            for (int i = 0; i < notlar.Length; i++)
             {
-                notSayi = 0;
-                Console.Clear();
-
-                Console.Write("Notu gir (0-100): ");
-                string notMetin = Console.ReadLine();
-
-                notSayi = Convert.ToByte(notMetin);
-
-                Console.WriteLine();
-                Console.Write("Notunuzun harf karşılığı: ");
-
-                if (notSayi >= 95)
+                if (notlar[i] < ortalama)
                 {
-                    Console.Write("A1");
-                }
-                else if (notSayi >= 90)
-                {
-                    Console.Write("A2");
-                }
-                else if (notSayi >= 85)
-                {
-                    Console.Write("A3");
-                }
-                else if (notSayi >= 80)
-                {
-                    Console.Write("B1");
-                }
-                else if (notSayi >= 75)
-                {
-                    Console.Write("B2");
-                }
-                else if (notSayi >= 70)
-                {
-                    Console.Write("B3");
-                }
-                else if (notSayi >= 65)
-                {
-                    Console.Write("C1");
-                }
-                else if (notSayi >= 60)
-                {
-                    Console.Write("C2");
-                }
-                else if (notSayi >= 55)
-                {
-                    Console.Write("C3");
-                }
-                else if (notSayi >= 50)
-                {
-                    Console.Write("D");
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"{i + 1}. Öğrenci: Kaldı");
                 }
                 else
                 {
-                    Console.Write("F3");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"{i + 1}. Öğrenci: Geçti;");
                 }
-
-                Console.ReadLine();
             }
 
-
-            //if (not >= 95)
-            //{
-            //    Console.Write("A1");
-            //}
-            //else
-            //{
-            //    if (not >= 90)
-            //    {
-            //        Console.Write("A2");
-            //    }
-            //    else
-            //    {
-            //        if (true)
-            //        {
-
-            //        }
-            //    }
-            //}
+            Console.ResetColor();
 
 
 
-            //if (not >= 85)
-            //{
-            //    Console.Write("A3");
-            //}
-            //else if (not >= 90)
-            //{
-            //    Console.Write("A2");
-            //}
-            //else if (not >= 95)
-            //{
-            //    Console.Write("A1");
-            //}
-            //else
-            //{
-            //    Console.Write("Başarısız");
-            //}
+
+            //Console.WriteLine("1. Öğrencinin notunu gir: ");
+            //notlar[0] = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("2. Öğrencinin notunu gir: ");
+            //notlar[1] = int.Parse(Console.ReadLine());
+
+            //Console.WriteLine("3. Öğrencinin notunu gir: ");
+            //notlar[2] = int.Parse(Console.ReadLine());
+
+
+
+            //Şifreleme Uygulaması
+
+            //Menü
+            //1. Şifrele
+            //2. Şifre Çöz
+            //3. Çıkış
+
+            //Seçim:
+
+            //Kullanıcı şifrelemek istediği metni girecek
+
+            //char x = 'a';
+
+            //char sifreli = (char)((int)x + 5);
+
+            //string metin = "Merhaba Dünya";
+
+            //metin[0]
+
+
+
+
+
+
+
+
+
+
 
 
         }
+
     }
 }
