@@ -67,47 +67,47 @@
             //}
 
 
-            int[] notlar;
+            //int[] notlar;
 
-            Console.Write("Kaç öğrencinin notunu gireceksiniz? ");
-            int ogrenciSayisi = int.Parse(Console.ReadLine());
+            //Console.Write("Kaç öğrencinin notunu gireceksiniz? ");
+            //int ogrenciSayisi = int.Parse(Console.ReadLine());
 
-            notlar = new int[ogrenciSayisi];
+            //notlar = new int[ogrenciSayisi];
 
-            for (int i = 0; i < notlar.Length; i++)
-            {
-                Console.Write($"{i + 1}. Öğrencinin notunu gir: ");
-                notlar[i] = int.Parse(Console.ReadLine());
-            }
+            //for (int i = 0; i < notlar.Length; i++)
+            //{
+            //    Console.Write($"{i + 1}. Öğrencinin notunu gir: ");
+            //    notlar[i] = int.Parse(Console.ReadLine());
+            //}
 
-            int toplamNot = 0;
+            //int toplamNot = 0;
 
-            for (int i = 0; i < notlar.Length; i++)
-            {
-                toplamNot += notlar[i];
-            }
+            //for (int i = 0; i < notlar.Length; i++)
+            //{
+            //    toplamNot += notlar[i];
+            //}
 
-            double ortalama = (double)toplamNot / ogrenciSayisi;
+            //double ortalama = (double)toplamNot / ogrenciSayisi;
 
-            Console.WriteLine("-----------------");
-            Console.Write($"Ortalama: {ortalama}");
+            //Console.WriteLine("-----------------");
+            //Console.Write($"Ortalama: {ortalama}");
 
 
-            for (int i = 0; i < notlar.Length; i++)
-            {
-                if (notlar[i] < ortalama)
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine($"{i + 1}. Öğrenci: Kaldı");
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine($"{i + 1}. Öğrenci: Geçti;");
-                }
-            }
+            //for (int i = 0; i < notlar.Length; i++)
+            //{
+            //    if (notlar[i] < ortalama)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine($"{i + 1}. Öğrenci: Kaldı");
+            //    }
+            //    else
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Green;
+            //        Console.WriteLine($"{i + 1}. Öğrenci: Geçti;");
+            //    }
+            //}
 
-            Console.ResetColor();
+            //Console.ResetColor();
 
 
 
@@ -145,12 +145,15 @@
 
 
 
+            //string ss = "Merhaba Dünya";
+            //ss[0]
 
+            char[] metin = new char[] { 'M', 'e', 'r', 'h', 'a', 'b', 'a', ' ', 'D', 'ü', 'n', 'y', 'a' };
+            string[] stringDizisi = new string[] {"Elma", "Armut", "Muz", "Kivi"};
 
+            int[] intDizi = new int[3]; //0-1-2
 
-
-
-
+            intDizi[3] = 0;
 
 
         }
